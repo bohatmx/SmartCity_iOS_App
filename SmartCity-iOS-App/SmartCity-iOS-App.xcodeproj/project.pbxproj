@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1A8DED43248D6333FCDDFD4E /* Pods_SmartCity_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9670DE37464F37A08F149F /* Pods_SmartCity_iOS_App.framework */; };
 		36B1CFD41D9BDD8D000797B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */; };
-		36B1CFD61D9BDD8D000797B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFD51D9BDD8D000797B8 /* ViewController.swift */; };
 		36B1CFD91D9BDD8D000797B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFD71D9BDD8D000797B8 /* Main.storyboard */; };
 		36B1CFDB1D9BDD8D000797B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */; };
 		36B1CFDE1D9BDD8D000797B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFDC1D9BDD8D000797B8 /* LaunchScreen.storyboard */; };
@@ -116,7 +115,6 @@
 		2E700CE1170F2A8E155FCE8F /* Pods-SmartCity-iOS-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App.release.xcconfig"; sourceTree = "<group>"; };
 		36B1CFD01D9BDD8D000797B8 /* SmartCity-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartCity-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36B1CFD51D9BDD8D000797B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36B1CFD81D9BDD8D000797B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36B1CFDD1D9BDD8D000797B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -269,7 +267,6 @@
 				36B1D01A1D9BE65E000797B8 /* DataModels */,
 				36B1D0031D9BE59B000797B8 /* Utils */,
 				36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */,
-				36B1CFD51D9BDD8D000797B8 /* ViewController.swift */,
 				36B1CFD71D9BDD8D000797B8 /* Main.storyboard */,
 				36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */,
 				36B1CFDC1D9BDD8D000797B8 /* LaunchScreen.storyboard */,
@@ -758,7 +755,6 @@
 				36B1D0961D9BE84C000797B8 /* AccountController.swift in Sources */,
 				36B1D0401D9BE68D000797B8 /* AlertTypeDTO.swift in Sources */,
 				36B1D0511D9BE68D000797B8 /* ContactDTO.swift in Sources */,
-				36B1CFD61D9BDD8D000797B8 /* ViewController.swift in Sources */,
 				36B1D08C1D9BE832000797B8 /* ComplaintCell.swift in Sources */,
 				36B1D0171D9BE630000797B8 /* RSSUtil.swift in Sources */,
 				36B1D09E1D9BE84C000797B8 /* StatementListNavigationController.swift in Sources */,

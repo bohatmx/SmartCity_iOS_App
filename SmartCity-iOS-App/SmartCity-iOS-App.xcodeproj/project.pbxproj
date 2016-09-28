@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8DED43248D6333FCDDFD4E /* Pods_SmartCity_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9670DE37464F37A08F149F /* Pods_SmartCity_iOS_App.framework */; };
+		36B1CFD41D9BDD8D000797B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */; };
+		36B1CFD61D9BDD8D000797B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFD51D9BDD8D000797B8 /* ViewController.swift */; };
+		36B1CFD91D9BDD8D000797B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFD71D9BDD8D000797B8 /* Main.storyboard */; };
+		36B1CFDB1D9BDD8D000797B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */; };
+		36B1CFDE1D9BDD8D000797B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFDC1D9BDD8D000797B8 /* LaunchScreen.storyboard */; };
+		36B1CFE91D9BDD8D000797B8 /* SmartCity_iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFE81D9BDD8D000797B8 /* SmartCity_iOS_AppTests.swift */; };
+		36B1CFF41D9BDD8D000797B8 /* SmartCity_iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFF31D9BDD8D000797B8 /* SmartCity_iOS_AppUITests.swift */; };
+		4EA1ED3D0C6AF4CFC12A1244 /* Pods_SmartCity_iOS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9549E0B475748DE519F8DB01 /* Pods_SmartCity_iOS_AppUITests.framework */; };
+		B07DCAC83A095AC22A822265 /* Pods_SmartCity_iOS_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A998C4CBA7E19F1F69F4A588 /* Pods_SmartCity_iOS_AppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36B1CFE51D9BDD8D000797B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36B1CFC81D9BDD8D000797B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36B1CFCF1D9BDD8D000797B8;
+			remoteInfo = "SmartCity-iOS-App";
+		};
+		36B1CFF01D9BDD8D000797B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36B1CFC81D9BDD8D000797B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36B1CFCF1D9BDD8D000797B8;
+			remoteInfo = "SmartCity-iOS-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16E1BB81C45ABA6F3BA819CE /* Pods-SmartCity-iOS-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E700CE1170F2A8E155FCE8F /* Pods-SmartCity-iOS-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App.release.xcconfig"; sourceTree = "<group>"; };
+		36B1CFD01D9BDD8D000797B8 /* SmartCity-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartCity-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36B1CFD51D9BDD8D000797B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36B1CFD81D9BDD8D000797B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36B1CFDD1D9BDD8D000797B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36B1CFDF1D9BDD8D000797B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B1CFE41D9BDD8D000797B8 /* SmartCity-iOS-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmartCity-iOS-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B1CFE81D9BDD8D000797B8 /* SmartCity_iOS_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCity_iOS_AppTests.swift; sourceTree = "<group>"; };
+		36B1CFEA1D9BDD8D000797B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B1CFEF1D9BDD8D000797B8 /* SmartCity-iOS-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmartCity-iOS-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B1CFF31D9BDD8D000797B8 /* SmartCity_iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCity_iOS_AppUITests.swift; sourceTree = "<group>"; };
+		36B1CFF51D9BDD8D000797B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3850B8057DC2009CEEE92924 /* Pods-SmartCity-iOS-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-AppUITests/Pods-SmartCity-iOS-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		824315F21A45655CD2C0B3ED /* Pods-SmartCity-iOS-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-AppUITests/Pods-SmartCity-iOS-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9549E0B475748DE519F8DB01 /* Pods_SmartCity_iOS_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCity_iOS_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A998C4CBA7E19F1F69F4A588 /* Pods_SmartCity_iOS_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCity_iOS_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9670DE37464F37A08F149F /* Pods_SmartCity_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCity_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E90008AB671C56ACB41EDE /* Pods-SmartCity-iOS-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App.debug.xcconfig"; sourceTree = "<group>"; };
+		E82D05A4CFB08C9D3D33DB0A /* Pods-SmartCity-iOS-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36B1CFCD1D9BDD8D000797B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8DED43248D6333FCDDFD4E /* Pods_SmartCity_iOS_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFE11D9BDD8D000797B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07DCAC83A095AC22A822265 /* Pods_SmartCity_iOS_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFEC1D9BDD8D000797B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA1ED3D0C6AF4CFC12A1244 /* Pods_SmartCity_iOS_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36B1CFC71D9BDD8D000797B8 = {
+			isa = PBXGroup;
+			children = (
+				36B1CFD21D9BDD8D000797B8 /* SmartCity-iOS-App */,
+				36B1CFE71D9BDD8D000797B8 /* SmartCity-iOS-AppTests */,
+				36B1CFF21D9BDD8D000797B8 /* SmartCity-iOS-AppUITests */,
+				36B1CFD11D9BDD8D000797B8 /* Products */,
+				9F095FA72C61A54A9FD8D4DD /* Pods */,
+				5B625509C58B3DEA9AB55659 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36B1CFD11D9BDD8D000797B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36B1CFD01D9BDD8D000797B8 /* SmartCity-iOS-App.app */,
+				36B1CFE41D9BDD8D000797B8 /* SmartCity-iOS-AppTests.xctest */,
+				36B1CFEF1D9BDD8D000797B8 /* SmartCity-iOS-AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36B1CFD21D9BDD8D000797B8 /* SmartCity-iOS-App */ = {
+			isa = PBXGroup;
+			children = (
+				36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */,
+				36B1CFD51D9BDD8D000797B8 /* ViewController.swift */,
+				36B1CFD71D9BDD8D000797B8 /* Main.storyboard */,
+				36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */,
+				36B1CFDC1D9BDD8D000797B8 /* LaunchScreen.storyboard */,
+				36B1CFDF1D9BDD8D000797B8 /* Info.plist */,
+			);
+			path = "SmartCity-iOS-App";
+			sourceTree = "<group>";
+		};
+		36B1CFE71D9BDD8D000797B8 /* SmartCity-iOS-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				36B1CFE81D9BDD8D000797B8 /* SmartCity_iOS_AppTests.swift */,
+				36B1CFEA1D9BDD8D000797B8 /* Info.plist */,
+			);
+			path = "SmartCity-iOS-AppTests";
+			sourceTree = "<group>";
+		};
+		36B1CFF21D9BDD8D000797B8 /* SmartCity-iOS-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36B1CFF31D9BDD8D000797B8 /* SmartCity_iOS_AppUITests.swift */,
+				36B1CFF51D9BDD8D000797B8 /* Info.plist */,
+			);
+			path = "SmartCity-iOS-AppUITests";
+			sourceTree = "<group>";
+		};
+		5B625509C58B3DEA9AB55659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD9670DE37464F37A08F149F /* Pods_SmartCity_iOS_App.framework */,
+				A998C4CBA7E19F1F69F4A588 /* Pods_SmartCity_iOS_AppTests.framework */,
+				9549E0B475748DE519F8DB01 /* Pods_SmartCity_iOS_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F095FA72C61A54A9FD8D4DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90008AB671C56ACB41EDE /* Pods-SmartCity-iOS-App.debug.xcconfig */,
+				2E700CE1170F2A8E155FCE8F /* Pods-SmartCity-iOS-App.release.xcconfig */,
+				16E1BB81C45ABA6F3BA819CE /* Pods-SmartCity-iOS-AppTests.debug.xcconfig */,
+				E82D05A4CFB08C9D3D33DB0A /* Pods-SmartCity-iOS-AppTests.release.xcconfig */,
+				3850B8057DC2009CEEE92924 /* Pods-SmartCity-iOS-AppUITests.debug.xcconfig */,
+				824315F21A45655CD2C0B3ED /* Pods-SmartCity-iOS-AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36B1CFCF1D9BDD8D000797B8 /* SmartCity-iOS-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B1CFF81D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-App" */;
+			buildPhases = (
+				43C17FAA5EF3B400A5C3674E /* 📦 Check Pods Manifest.lock */,
+				36B1CFCC1D9BDD8D000797B8 /* Sources */,
+				36B1CFCD1D9BDD8D000797B8 /* Frameworks */,
+				36B1CFCE1D9BDD8D000797B8 /* Resources */,
+				50DBCF853E80C56BD0D4967F /* 📦 Embed Pods Frameworks */,
+				D82415D894EE0FE327639789 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartCity-iOS-App";
+			productName = "SmartCity-iOS-App";
+			productReference = 36B1CFD01D9BDD8D000797B8 /* SmartCity-iOS-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36B1CFE31D9BDD8D000797B8 /* SmartCity-iOS-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B1CFFB1D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-AppTests" */;
+			buildPhases = (
+				BA28A11966F985D8F5C05264 /* 📦 Check Pods Manifest.lock */,
+				36B1CFE01D9BDD8D000797B8 /* Sources */,
+				36B1CFE11D9BDD8D000797B8 /* Frameworks */,
+				36B1CFE21D9BDD8D000797B8 /* Resources */,
+				1077DB1A90DA9E81A5614E80 /* 📦 Embed Pods Frameworks */,
+				2F144547EC164EB614CFE14A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B1CFE61D9BDD8D000797B8 /* PBXTargetDependency */,
+			);
+			name = "SmartCity-iOS-AppTests";
+			productName = "SmartCity-iOS-AppTests";
+			productReference = 36B1CFE41D9BDD8D000797B8 /* SmartCity-iOS-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36B1CFEE1D9BDD8D000797B8 /* SmartCity-iOS-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B1CFFE1D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-AppUITests" */;
+			buildPhases = (
+				DD38E5029A5D663D301EBB5F /* 📦 Check Pods Manifest.lock */,
+				36B1CFEB1D9BDD8D000797B8 /* Sources */,
+				36B1CFEC1D9BDD8D000797B8 /* Frameworks */,
+				36B1CFED1D9BDD8D000797B8 /* Resources */,
+				BE72BFECBE12FD5AF3DF500A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B1CFF11D9BDD8D000797B8 /* PBXTargetDependency */,
+			);
+			name = "SmartCity-iOS-AppUITests";
+			productName = "SmartCity-iOS-AppUITests";
+			productReference = 36B1CFEF1D9BDD8D000797B8 /* SmartCity-iOS-AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36B1CFC81D9BDD8D000797B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Aubrey Malabie";
+				TargetAttributes = {
+					36B1CFCF1D9BDD8D000797B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 34VGVT7K26;
+					};
+					36B1CFE31D9BDD8D000797B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36B1CFCF1D9BDD8D000797B8;
+					};
+					36B1CFEE1D9BDD8D000797B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 36B1CFCF1D9BDD8D000797B8;
+					};
+				};
+			};
+			buildConfigurationList = 36B1CFCB1D9BDD8D000797B8 /* Build configuration list for PBXProject "SmartCity-iOS-App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36B1CFC71D9BDD8D000797B8;
+			productRefGroup = 36B1CFD11D9BDD8D000797B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36B1CFCF1D9BDD8D000797B8 /* SmartCity-iOS-App */,
+				36B1CFE31D9BDD8D000797B8 /* SmartCity-iOS-AppTests */,
+				36B1CFEE1D9BDD8D000797B8 /* SmartCity-iOS-AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36B1CFCE1D9BDD8D000797B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1CFDE1D9BDD8D000797B8 /* LaunchScreen.storyboard in Resources */,
+				36B1CFDB1D9BDD8D000797B8 /* Assets.xcassets in Resources */,
+				36B1CFD91D9BDD8D000797B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFE21D9BDD8D000797B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFED1D9BDD8D000797B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1077DB1A90DA9E81A5614E80 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F144547EC164EB614CFE14A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43C17FAA5EF3B400A5C3674E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50DBCF853E80C56BD0D4967F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA28A11966F985D8F5C05264 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE72BFECBE12FD5AF3DF500A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-AppUITests/Pods-SmartCity-iOS-AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D82415D894EE0FE327639789 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD38E5029A5D663D301EBB5F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36B1CFCC1D9BDD8D000797B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1CFD61D9BDD8D000797B8 /* ViewController.swift in Sources */,
+				36B1CFD41D9BDD8D000797B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFE01D9BDD8D000797B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1CFE91D9BDD8D000797B8 /* SmartCity_iOS_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B1CFEB1D9BDD8D000797B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1CFF41D9BDD8D000797B8 /* SmartCity_iOS_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36B1CFE61D9BDD8D000797B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36B1CFCF1D9BDD8D000797B8 /* SmartCity-iOS-App */;
+			targetProxy = 36B1CFE51D9BDD8D000797B8 /* PBXContainerItemProxy */;
+		};
+		36B1CFF11D9BDD8D000797B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36B1CFCF1D9BDD8D000797B8 /* SmartCity-iOS-App */;
+			targetProxy = 36B1CFF01D9BDD8D000797B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36B1CFD71D9BDD8D000797B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B1CFD81D9BDD8D000797B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36B1CFDC1D9BDD8D000797B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B1CFDD1D9BDD8D000797B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36B1CFF61D9BDD8D000797B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36B1CFF71D9BDD8D000797B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36B1CFF91D9BDD8D000797B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E90008AB671C56ACB41EDE /* Pods-SmartCity-iOS-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SmartCity-iOS-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36B1CFFA1D9BDD8D000797B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E700CE1170F2A8E155FCE8F /* Pods-SmartCity-iOS-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "SmartCity-iOS-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		36B1CFFC1D9BDD8D000797B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E1BB81C45ABA6F3BA819CE /* Pods-SmartCity-iOS-AppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SmartCity-iOS-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCity-iOS-App.app/SmartCity-iOS-App";
+			};
+			name = Debug;
+		};
+		36B1CFFD1D9BDD8D000797B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E82D05A4CFB08C9D3D33DB0A /* Pods-SmartCity-iOS-AppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SmartCity-iOS-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCity-iOS-App.app/SmartCity-iOS-App";
+			};
+			name = Release;
+		};
+		36B1CFFF1D9BDD8D000797B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3850B8057DC2009CEEE92924 /* Pods-SmartCity-iOS-AppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "SmartCity-iOS-AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SmartCity-iOS-App";
+			};
+			name = Debug;
+		};
+		36B1D0001D9BDD8D000797B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824315F21A45655CD2C0B3ED /* Pods-SmartCity-iOS-AppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "SmartCity-iOS-AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oneconnectgroup.SmartCity-iOS-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SmartCity-iOS-App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36B1CFCB1D9BDD8D000797B8 /* Build configuration list for PBXProject "SmartCity-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1CFF61D9BDD8D000797B8 /* Debug */,
+				36B1CFF71D9BDD8D000797B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B1CFF81D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1CFF91D9BDD8D000797B8 /* Debug */,
+				36B1CFFA1D9BDD8D000797B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B1CFFB1D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1CFFC1D9BDD8D000797B8 /* Debug */,
+				36B1CFFD1D9BDD8D000797B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B1CFFE1D9BDD8D000797B8 /* Build configuration list for PBXNativeTarget "SmartCity-iOS-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1CFFF1D9BDD8D000797B8 /* Debug */,
+				36B1D0001D9BDD8D000797B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36B1CFC81D9BDD8D000797B8 /* Project object */;
+}

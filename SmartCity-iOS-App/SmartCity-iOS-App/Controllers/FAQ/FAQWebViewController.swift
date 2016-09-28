@@ -55,6 +55,7 @@ class FAQWebViewController: UIViewController {
 	}
 
 	func loadWebView(url: String) {
+        Util.logMessage("loading faq page \(url)")
 		UIWebView.loadRequest(webView)(NSURLRequest(URL: NSURL(string: url)!))
 
 	}

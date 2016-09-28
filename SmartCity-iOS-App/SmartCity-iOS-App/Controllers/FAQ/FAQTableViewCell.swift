@@ -20,20 +20,11 @@ class FAQTableViewCell: UITableViewCell {
 		super.awakeFromNib()
 		Util.logMessage("starting wakeFromNib")
 
-//		if (faqTitle != nil) {
-//			faqTitle.text = mTitle!
-//			number.text = "\(index + 1)"
-//		}
-
-		Util.logMessage("ending wakeFromNib")
-
 	}
 
-    
 	override func setSelected(selected: Bool, animated: Bool) {
 		super.setSelected(selected, animated: animated)
 		Util.logMessage("animated \(animated)")
-		
 
 	}
 

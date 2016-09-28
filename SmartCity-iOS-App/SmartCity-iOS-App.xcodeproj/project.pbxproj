@@ -488,6 +488,7 @@
 				36B1CFCE1D9BDD8D000797B8 /* Resources */,
 				50DBCF853E80C56BD0D4967F /* 📦 Embed Pods Frameworks */,
 				D82415D894EE0FE327639789 /* 📦 Copy Pods Resources */,
+				36B1D0A41D9BF2D4000797B8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -644,6 +645,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		36B1D0A41D9BF2D4000797B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Fabric/run 894ccb6b323ee8dd292dc7757a92439437008e1e c7576940aad3d29202475d646636692e41c9bd9e2bba3e51809fd8e205517048";
 		};
 		43C17FAA5EF3B400A5C3674E /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

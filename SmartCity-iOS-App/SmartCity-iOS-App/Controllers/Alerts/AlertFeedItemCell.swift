@@ -26,7 +26,7 @@ class AlertFeedItemCell: UITableViewCell {
 	}
 
 	internal func setFeedItem(feedItem: FeedItem) {
-		Util.logMessage("AlertFeedItemCell \(feedItem.title) \n \(feedItem.thumbnailUrl)")
+		Util.logMessage("AlertFeedItemCell: \(feedItem.title!) \n \(feedItem.thumbnailUrl!)")
 		if feedItem.thumbnailUrl != nil {
 			Util.loadImageFromUrl(feedItem.thumbnailUrl!, view: alertImage)
 		}

@@ -13,14 +13,18 @@ import DropDown
 import Toast_Swift
 
 class ComplaintBuilderController: UIViewController, CLLocationManagerDelegate,
-DataProtocol {
+DataProtocol, UITextFieldDelegate {
 
 	@IBOutlet weak var previousLabel: UILabel!
+
+	@IBOutlet weak var descLabel: UILabel!
+	@IBOutlet weak var desc: UITextField!
 
 	@IBOutlet weak var countLabel: UILabel!
 	@IBOutlet weak var header: UILabel!
 	@IBOutlet weak var newComplaint: UILabel!
 
+	@IBOutlet weak var busy: UIActivityIndicatorView!
 	@IBOutlet weak var cameraIcon: UIImageView!
 	@IBOutlet weak var btnSend: UIButton!
 	@IBOutlet weak var btnStart: UIButton!
@@ -45,6 +49,8 @@ DataProtocol {
 		super.viewDidLoad()
 
 		btnSend.hidden = true
+		busy.hidden = true
+        desc.delegate = self
 		do {
 			muni = try Util.getMunicipality()
 
@@ -64,7 +70,7 @@ DataProtocol {
 
 		getLocation()
 		let imageRec = UITapGestureRecognizer(target: self, action: #selector(ComplaintBuilderController.startCamera))
-		//cameraIcon.userInteractionEnabled = true
+		// cameraIcon.userInteractionEnabled = true
 		cameraIcon.addGestureRecognizer(imageRec)
 		cameraIcon.alpha = 0
 
@@ -77,7 +83,11 @@ DataProtocol {
 		countLabel.addGestureRecognizer(prevRec2)
 
 	}
-
+	func textFieldShouldReturn(textField: UITextField) -> Bool // called when 'return' key pressed. return false to ignore.
+	{
+		desc.resignFirstResponder()
+		return true
+	}
 	func goToComplaintList() {
 		let count = response?.complaintList?.count
 		if (count > 0) {
@@ -99,6 +109,7 @@ DataProtocol {
 	}
 	func sendComplaint() {
 		Util.logMessage("sending complaint: \(cat) \(subCat)")
+        textFieldShouldReturn(desc)
 		btnSend.hidden = true
 		let c = ComplaintDTO()
 		let p = ProfileInfoDTO()
@@ -109,11 +120,14 @@ DataProtocol {
 
 		c.category = cat
 		c.subCategory = subCat
+		c.description = desc.text
 
 		let req = RequestDTO(requestType: RequestDTO.ADD_COMPLAINT)
 		req.complaint = c
 		req.municipalityID = muni?.municipalityID
 
+		busy.hidden = false
+		busy.startAnimating()
 		DataUtil.sendRequest(req, listener: self)
 
 	}
@@ -121,12 +135,26 @@ DataProtocol {
 	var complaint: ComplaintDTO?
 
 	func onResponseDataReceived(response: ResponseDTO) {
+		busy.stopAnimating()
+		busy.hidden = true
 		complaint = response.complaintList![0]
-		//cameraIcon.alpha = 1
-		//addPicturesDialog()
+		showResponse((complaint?.complaintUpdateStatusList![0])!)
+		// cameraIcon.alpha = 1
+		// addPicturesDialog()
 	}
+	func showResponse(status: ComplaintUpdateStatusDTO) {
+		let d = UNAlertView(title: "Complaint Status", message: status.remarks!)
+		d.addButton("OK", action: {
+			d.hidden = true
+			self.performSegueWithIdentifier(self.SEGUE_complaints, sender: self)
+		})
+		d.show()
+	}
+
 	func onError(message: String) {
 		Util.logMessage(message)
+		busy.stopAnimating()
+		busy.hidden = true
 		// todo - cache complaint for later
 		let d = UNAlertView(title: "Services Message",
 			message: "Unable to lodge complaint at this time. Please try again later. Thanks!")
@@ -152,6 +180,13 @@ DataProtocol {
 			self.setupSubCategoryDropDown((self.response?.complaintCategoryList![index])!)
 
 		}
+		DropDown.appearance().textColor = UIColor.blueColor()
+		DropDown.appearance().textFont = UIFont.systemFontOfSize(18)
+		DropDown.appearance().backgroundColor = UIColor.whiteColor()
+		DropDown.appearance().selectionBackgroundColor = UIColor.lightGrayColor()
+		DropDown.appearance().cellHeight = 50
+
+		categoryDropDown.anchorView = btnStart
 
 	}
 	func setupSubCategoryDropDown(cat: ComplaintCategoryDTO) {

@@ -23,6 +23,7 @@ class ComplaintDTO: Decodable, Mappable {
 	var address: String?
 	var number: String?
 	var street: String?
+	var description: String?
 	var suburb: String?
 	var city: String?
 	var category: String?
@@ -39,10 +40,10 @@ class ComplaintDTO: Decodable, Mappable {
 	var complaintUpdateStatusList: Array<ComplaintUpdateStatusDTO>?
 
 	// MARK: - functions to conform to ObjectMapper protocol Mappable
-	 required init?(_ map: Map) {
+	required init?(_ map: Map) {
 	}
 
-	 required init() {
+	required init() {
 	}
 
 	func mapping(map: Map) {
@@ -57,6 +58,7 @@ class ComplaintDTO: Decodable, Mappable {
 		remarks <- map["remarks"]
 		address <- map["address"]
 		number <- map["number"]
+		description <- map["description"]
 		street <- map["street"]
 		suburb <- map["suburb"]
 		city <- map["city"]
@@ -76,7 +78,7 @@ class ComplaintDTO: Decodable, Mappable {
 	}
 
 	// MARK: - functions to conform to Decodable
-	 required init?(json: JSON) {
+	required init?(json: JSON) {
 		self.complaintID = "complaintID" <~~ json
 		self.municipalityID = "municipalityID" <~~ json
 		self.subCategoryID = "subCategoryID" <~~ json
@@ -89,6 +91,7 @@ class ComplaintDTO: Decodable, Mappable {
 		self.remarks = "remarks" <~~ json
 		self.address = "address" <~~ json
 		self.number = "number" <~~ json
+		self.description = "description" <~~ json
 		self.street = "street" <~~ json
 		self.suburb = "suburb" <~~ json
 		self.city = "city" <~~ json

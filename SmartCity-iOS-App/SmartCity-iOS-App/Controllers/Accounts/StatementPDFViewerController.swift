@@ -48,11 +48,45 @@ class StatementPDFViewerController: UIViewController, UIWebViewDelegate {
 		Util.logMessage("pdf statement loading ....")
 		busy.hidden = false;
 		busy.startAnimating()
+        setTimer()
 	}
 	func webViewDidFinishLoad(webView: UIWebView) {
 		Util.logMessage("pdf statement done loading")
 		busy.hidden = true
 		busy.stopAnimating()
+        timer?.invalidate()
+        timer = nil
 	}
+
+    var timer: NSTimer?
+    func setTimer() {
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(getTimeInterval(), target: self, selector:
+            #selector(StatementPDFViewerController.stopTrying), userInfo: nil, repeats: false)
+    }
+    func getTimeInterval() -> NSTimeInterval {
+        let reachability = Reachability.reachabilityForInternetConnection()
+        
+        if reachability.isReachableViaWiFi() {
+            return 60.0
+        }
+        if reachability.isReachableViaWWAN() {
+            return 120.0
+        }
+        else {
+            return 180.0
+        }
+    }
+    func stopTrying() {
+        timer?.invalidate()
+        timer = nil
+        let d = UNAlertView(title: "Statement Error", message: "Unable to download statement at this time. Please try later")
+        d.addButton("OK", action: {
+            d.hidden = true
+            self.navigationController?.popViewControllerAnimated(true)
+        })
+        d.show()
+        
+    }
 
 }

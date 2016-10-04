@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A8DED43248D6333FCDDFD4E /* Pods_SmartCity_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9670DE37464F37A08F149F /* Pods_SmartCity_iOS_App.framework */; };
+		36B0066B1DA3A31E006515DF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B0066A1DA3A31E006515DF /* Reachability.swift */; };
 		36B1CFD41D9BDD8D000797B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */; };
 		36B1CFD91D9BDD8D000797B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFD71D9BDD8D000797B8 /* Main.storyboard */; };
 		36B1CFDB1D9BDD8D000797B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B1CFDA1D9BDD8D000797B8 /* Assets.xcassets */; };
@@ -113,6 +114,7 @@
 /* Begin PBXFileReference section */
 		16E1BB81C45ABA6F3BA819CE /* Pods-SmartCity-iOS-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-AppTests/Pods-SmartCity-iOS-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E700CE1170F2A8E155FCE8F /* Pods-SmartCity-iOS-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity-iOS-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity-iOS-App/Pods-SmartCity-iOS-App.release.xcconfig"; sourceTree = "<group>"; };
+		36B0066A1DA3A31E006515DF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		36B1CFD01D9BDD8D000797B8 /* SmartCity-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartCity-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B1CFD31D9BDD8D000797B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36B1CFD81D9BDD8D000797B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				36B1D00C1D9BE630000797B8 /* RSSUtil.swift */,
 				36B1D00D1D9BE630000797B8 /* RandomImage.swift */,
 				36B1D00E1D9BE630000797B8 /* MonthYearPickerView.swift */,
+				36B0066A1DA3A31E006515DF /* Reachability.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -763,6 +766,7 @@
 				36B1D0491D9BE68D000797B8 /* ProfileInfoDTO.swift in Sources */,
 				36B1D0601D9BE727000797B8 /* LandingPageController.swift in Sources */,
 				36B1D0411D9BE68D000797B8 /* ComplaintDTO.swift in Sources */,
+				36B0066B1DA3A31E006515DF /* Reachability.swift in Sources */,
 				36B1D0741D9BE7EB000797B8 /* FAQIndependentController.swift in Sources */,
 				36B1D0691D9BE7CE000797B8 /* ContactsTableViewController.swift in Sources */,
 				36B1D0971D9BE84C000797B8 /* AccountListController.swift in Sources */,

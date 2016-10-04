@@ -32,9 +32,9 @@ class NewsController: UITableViewController, FeedListener {
 
 	}
 
-	func popMessage(message: String, title: String) {
+	func popMessage(message: String, title: String, color: UIColor) {
 		let pop = UNAlertView(title: title, message: message)
-		pop.addButton("OK", backgroundColor: UIColor.redColor()) {
+		pop.addButton("OK", backgroundColor: color) {
 			pop.hidden = true
 		}
 		pop.show()
@@ -43,9 +43,12 @@ class NewsController: UITableViewController, FeedListener {
 
 		feedItems = items
 		tableView.reloadData()
+        if items.isEmpty {
+            popMessage("There are no current news articles", title: "News", color: UIColor.greenColor())
+        }
 	}
 	func onError(message: String) {
-
+        popMessage(message, title: "Server Message", color: UIColor.redColor())
 	}
 	// MARK: - Table view data source
 

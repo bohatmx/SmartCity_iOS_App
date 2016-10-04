@@ -26,14 +26,17 @@ class RSSUtil {
 	}
 	static func getFeed(url: String, type: Int, listener: FeedListener) {
 
-        Util.logMessage("feed url: \(url)")
+		Util.logMessage("feed url: \(url)")
 		Alamofire.request(.GET, url, parameters: nil).responseJSON { response in
-			
 
 			switch response.result {
 			case .Success(let x):
-				
+
 				let feedItems = FeedItems(json: x as! JSON)
+				if feedItems == nil || (feedItems?.feedItems.isEmpty)! {
+					listener.onFeedReceived([FeedItem]())
+					break
+				}
 				switch (type) {
 				case 1:
 					Util.setNewsFeedData((feedItems?.feedItems)!)
@@ -49,9 +52,8 @@ class RSSUtil {
 			case .Failure(let error):
 
 				Util.logMessage("******** Alamofire ERROR status: \(error.localizedDescription)")
-
 				// TODO - parse the error type and set appr messsage
-				listener.onError("Server unable to process request")
+				listener.onError("Server unable to process request: \(error.localizedDescription)")
 			}
 
 		}

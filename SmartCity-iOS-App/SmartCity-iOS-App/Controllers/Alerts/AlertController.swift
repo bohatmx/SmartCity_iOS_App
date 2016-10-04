@@ -30,9 +30,9 @@ class AlertController: UITableViewController, FeedListener {
 
 	}
 
-	func popMessage(message: String, title: String) {
+    func popMessage(message: String, title: String, color: UIColor) {
 		let pop = UNAlertView(title: title, message: message)
-		pop.addButton("OK", backgroundColor: UIColor.redColor()) {
+		pop.addButton("OK", backgroundColor: color) {
 			pop.hidden = true
 		}
 		pop.show()
@@ -41,9 +41,12 @@ class AlertController: UITableViewController, FeedListener {
 		Util.logMessage("------------ items received \(items.count)")
 		feedItems = items
 		tableView.reloadData()
+        if items.isEmpty {
+            popMessage("There are no current alerts", title: "Alerts", color: UIColor.blueColor())
+        }
 	}
 	func onError(message: String) {
-
+        popMessage(message, title: "Server Message", color: UIColor.redColor())
 	}
 	// MARK: - Table view data source
 

@@ -50,7 +50,9 @@ DataProtocol, UITextFieldDelegate {
 
 		btnSend.hidden = true
 		busy.hidden = true
-        desc.delegate = self
+		desc.delegate = self
+		desc.hidden = true
+		descLabel.hidden = true
 		do {
 			muni = try Util.getMunicipality()
 
@@ -94,6 +96,11 @@ DataProtocol, UITextFieldDelegate {
 			performSegueWithIdentifier(SEGUE_complaints, sender: self)
 		}
 	}
+
+	@IBAction func lodgeComplaint(sender: AnyObject) {
+
+		confirmDialog()
+	}
 	@IBAction func startComplaint(sender: AnyObject) {
 		DropDown.appearance().textColor = UIColor.blackColor()
 		DropDown.appearance().textFont = UIFont.systemFontOfSize(18)
@@ -109,7 +116,7 @@ DataProtocol, UITextFieldDelegate {
 	}
 	func sendComplaint() {
 		Util.logMessage("sending complaint: \(cat) \(subCat)")
-        textFieldShouldReturn(desc)
+		textFieldShouldReturn(desc)
 		btnSend.hidden = true
 		let c = ComplaintDTO()
 		let p = ProfileInfoDTO()
@@ -186,7 +193,7 @@ DataProtocol, UITextFieldDelegate {
 		DropDown.appearance().selectionBackgroundColor = UIColor.lightGrayColor()
 		DropDown.appearance().cellHeight = 50
 
-		categoryDropDown.anchorView = btnStart
+		categoryDropDown.anchorView = desc
 
 	}
 	func setupSubCategoryDropDown(cat: ComplaintCategoryDTO) {
@@ -199,15 +206,20 @@ DataProtocol, UITextFieldDelegate {
 			print("Selected item: \(item) at index: \(index)")
 			self.subCat = item
 			self.newComplaint.text = "\(self.cat), \(self.subCat)"
-			self.confirmDialog()
+
+			self.desc.hidden = false
+			self.descLabel.hidden = false
+			self.btnSend.hidden = false
+			self.doToast("Please enter a description if appropriate")
 		}
+
 		DropDown.appearance().textColor = UIColor.blueColor()
 		DropDown.appearance().textFont = UIFont.systemFontOfSize(18)
 		DropDown.appearance().backgroundColor = UIColor.whiteColor()
 		DropDown.appearance().selectionBackgroundColor = UIColor.lightGrayColor()
 		DropDown.appearance().cellHeight = 50
 
-		subCategoryDropDown.anchorView = btnStart
+		subCategoryDropDown.anchorView = desc
 		subCategoryDropDown.width = 300
 		subCategoryDropDown.show()
 	}
@@ -299,5 +311,27 @@ DataProtocol, UITextFieldDelegate {
 
 			}
 	}
+	func doToast(message: String) {
+		// create a new style
+		var style = ToastStyle()
+
+		style.messageColor = UIColor.yellowColor()
+
+		// or perhaps you want to use this style for all toasts going forward?
+		// just set the shared style and there's no need to provide the style again
+		ToastManager.shared.style = style
+
+		// toggle "tap to dismiss" functionality
+		ToastManager.shared.tapToDismissEnabled = true
+
+		// toggle queueing behavior
+		ToastManager.shared.queueEnabled = true
+		// display toast with an activity spinner
+		// self.view.makeToastActivity(.Center)
+
+		// present the toast with the new style
+		self.navigationController?.view.makeToast(message)
+	}
+
 }
 
